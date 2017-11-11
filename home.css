@@ -1,0 +1,121 @@
+/**{
+	margin: 0px;
+	padding: 0px;
+}
+
+html, body{
+	font: 13px "Treebuchet MS", Arial, Helvetica, sana-serif;
+    color: #333;	
+}
+
+a{
+	font: 13px "Treebuchet MS", Arial, Helvetica, sana-serif;
+	color: #000;
+	text-decoration: none;
+}
+
+#container {
+	width: 950px;
+	padding: 5px;
+	margin: 0px auto;
+}
+
+#head {
+	width: 960px;
+	height: 30px;
+	border: 1px solid #666;
+	margin-bottom: 5px;
+	background: #ebc79e;
+	box-shadow: 0 5px 50px black;
+}
+
+#menu ul {
+	list-style: none;
+}
+
+#menu ul li {
+	list-style: none;
+}
+
+#menu ul li a {
+	float: left;
+	font: 15px "Treebuchet MS", Arial, Helvetica, sana-serif;
+	color: #000000;
+	padding: 5px 15px;
+}
+
+#menu ul li a: hover {
+	background: #ffffff;
+}
+
+#conteudo {
+	width: 660px;
+	float: left;
+	padding: 0px 5px;
+	border: 1px solid #000;
+	margin-bottom: 5px;
+}
+
+#slidebar {
+	float: right;
+	width: 273px;
+	margin-bottom: 5px;
+}
+
+.titlebox {
+	width: 273px;
+	border:1px solid #000;
+	border-top-left-radius: 9px;
+	border-top-right-radius: 9px;
+	height: 22px;
+	padding: 0px 5px;
+	text-align: center;
+	font: 16px "Treebuchet MS", Arial, Helvetica, sana-serif;
+	margin-bottom: -1px;
+}
+
+.contentbox {
+	width: 273px;
+	border: 1px solid #000;
+	padding: 5px;
+	font: 14px "Treebuchet MS", Arial, Helvetica, sana-serif;
+}
+
+#rodape {
+	width: 950px;
+	height: 20px;
+	background: #ebc79e;
+	border: 1px solid #000;
+	padding: 0px 5px;
+	color: #fff;
+}*/
+
+* {
+	margin:0;
+	padding:0;
+}
+
+html, body {
+	background-color: #cc0000;
+}
+
+#container {
+	width:950px;
+	padding:0px;
+	margin:0px auto;
+	background-color: blue;
+}
+
+#head {
+	width: 960px;
+	height: 300px;
+	background: #ebc79e;
+}
+
+#conteudo {
+	width: 660px;
+	float: left;
+	padding: 0px 5px;
+	border: 1px solid #000;
+	margin-bottom: 5px;
+}

@@ -1,0 +1,143 @@
+﻿<html>
+<head>
+    <link rel = "shortcut icon" href = "emcima.png" type = "imagem/x-png"/>
+    <title>  Essencial Ateliê de Beleza </title>
+    
+    <script type = "text/javascript">
+
+       function validar() 
+       {
+           limpaCores();
+
+           var a, b, c, d;
+   
+           a = document.form1.txtNome.value;
+
+           if (a.length == 0) 
+           {
+              alert("Preencha o campo Nome");
+              document.form1.txtNome.focus();
+              document.form1.txtNome.style.background = "yellow";
+              return false;
+           }
+
+           b = document.form1.txtTelefone.value;
+
+           if (b.length == 0) 
+           {
+              alert("Preencha o campo Telefone");
+              document.form1.txtTelefone.focus();
+              document.form1.txtTelefone.style.background = "yellow";
+              return false;
+           }
+
+           c = document.form1.txtEmail.value;
+
+           if (c.indexOf("@") < 0) 
+           {
+              alert("Preencha o campo E-mail");
+              document.form1.txtEmail.focus();
+              document.form1.txtEmail.style.background = "yellow";
+              return false;
+           }
+
+           d = document.form1.txtMensagem.value;
+
+           if (d.length == 0) 
+           {
+              alert("Preencha o campo Mensagem");
+              document.form1.txtMensagem.focus();
+              document.form1.txtMensagem.style.background = "yellow";
+              return false;
+           }
+
+           document.form1.submit();
+        }
+
+           function limpaCores() 
+           {
+              document.form1.txtNome.style.background = "white";
+              document.form1.txtTelefone.style.background = "white";
+              document.form1.txtEmail.style.background = "white";
+              document.form1.txtMensagem.style.background = "white";
+           }
+
+    </script>
+
+	<link rel="stylesheet" href="arquivo.css" />
+</head>
+
+<body bgcolor="#ff0000">
+  <div id = "container">
+    <div id = "header">
+	<a href = "home.html"><center><img src = "emcima.png" width = "350" height = "300"><img src = "capa.jpg" width = "600" height = "300"></center></a>
+	</div>
+	<div id = "Menu" >
+	     <ul>
+		  <li><a href = "home.html">Home</a></li>
+		  <li><a href = "servico.html">Serviços</a></li>
+		  <li><a href = "contatos.html">Contatos</a></li></ul>
+    </div>
+	
+	<div id = "conteudo"> 
+	<p><b>Nós do Essencial Atelier de Beleza prezamos muito<br>
+	por seu conforto e comodidade. Para que possamos melhor<br>
+	atende-lo precisamos do seu feedback. <br>
+	Por favor preencha os campos abaixo...<b></p><br>
+	
+	<table>
+	<form name="form1" method="post" action="Essencial.jsp">
+		<tr>
+			<td><b>Nome:</td> <td></b><input type = "text" name = "txtNome" size = "25"></td>
+		</tr>
+	
+		<tr>
+			<td><b>Telefone:</td> <td></b><input type = "text" name = "txtTelefone" size = "25"></td>
+		</tr>
+	
+		<tr>
+			<td><b>E-mail:</td> <td></b><input type = "text" name = "txtEmail" size = "25"></td>
+		</tr>
+	
+		<tr>
+			<td><b>Mensagem:</b></td><td><textarea name = "txtMensagem" cols = "98" rows = "6"></textarea></td>
+		</tr>
+	
+		<tr>
+			<td><input type = "button" value = "Enviar" onClick="validar()"></td>
+			<td><input type = "reset" value = "Limpar"></td>
+		</tr>
+	
+	</form>
+	</table>
+	</div> 
+	
+	<div id ="clear">
+	</div>
+	
+	<div id = "rodape">
+	  <a href = "feedback.html"><b>Deixe o seu Feedback :</b></a><br><br>
+	  <b> Curta nossas páginas no:</b> 
+	  
+	  <table>
+	  
+		<tr>
+			<td><a href = "http://www.facebook.com.br" target = "post"><b>Facebook</b></a></td> 
+			<td><a href = "http://www.twitter.com.br" target = "post"><b><center>Twitter</center></b></a></td>
+			<td><a href = "https://www.instagram.com" target = "post"><b>Instagram</b></a></td>
+		</tr>
+		
+		<tr>
+		</tr>
+		
+		<tr>
+			<td><b>Fixo: (11)3294-4173 / </b></td>
+			<td><b> Whatsapp: (11)99295-3806</b></td>
+		</tr>
+		
+	  </table>
+	</div>
+	</div>
+
+</body>
+</html>	
